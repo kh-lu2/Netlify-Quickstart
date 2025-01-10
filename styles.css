@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.8;
+    margin: 0 15px;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #005f73, #0a9396);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.tutorial-steps {
+    display: block;
+}
+
+.step {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #005f73;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #005f73;
+    padding-bottom: 10px;
+}
+
+.step img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.step img:hover {
+    transform: scale(1.05);
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.highlighted-action {
+    background-color: #b3d9d3;
+    color: #003d3b;
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #005f73;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .step {
+        padding: 20px;
+    }
+
+    .step h2 {
+        font-size: 1.8rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .step {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .step h2 {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
